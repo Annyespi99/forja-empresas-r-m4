@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root{
+    
+    ---whitee-color: #ffffff;
+    ---red-color: #a40101;
+    ---blue-color: #2ca3ab;
+    ---blue2-color: #2ca3ab9b;
+    ---grey-color: #c4c4c4;
+    ---orange-color: #ca5714;
+    ---orangelight-color: #e47c40;
+    ---darkblue-color: #1d1b45;
+    ---darkbluelight-color: #1d1b45d8;
+    ---lightblue-color: #a8dde0;
+    ---dark-color: #191919;
+    ---gray-dark: #4444;
+}
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.containerprin{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+header{
+  grid-column: 1/3;
+  background-color: var(---dark-color);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+
+header img{
+  margin-top: 20px;
+  max-width: 70%;
+}
+
+.buttons-header{
+  grid-column: 3/3;
+  margin: 20px;
+}
+
+.btnformuno{
+  width:60px;
+  height:60px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size:30px;
+  border: 2px solid var(---blue-color);
+  color: var(---darkblue-color);
+}
+.btnformuno:hover{
+  color: var(---whitee-color) !important;
+  box-shadow: 0 2px 4px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease; 
+  background-color: var(---darkblue-color);
+
+}
+
+.banner-img{
+  grid-column: 1/3;
+  background-color: #2ca3ab;
+}
+
+.banner-img img{
+  width: 100%;
+}
+
+.title{
+  margin-top: 20px;
+  grid-column: 1/3;
+  background-color: #1d1b45;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.container2{
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border: 2px solid var(---grey-colorr);
+  grid-column: 1/3;
+  margin-top: 20px;
+  background-color: var(---whitee-color);
+}
+
+.form{
+  grid-column: 1/3;
+  width: 90%;
+  gap: 10px;
+  border-radius: 20px;
+  margin: 1.6em auto;
+  border: 2px solid black;
+  background-color: var(---grey-color);
+}
+
+.input{
+  margin: 20px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  padding: 0 10px;
+  color: gray;
+}
+
+.datospaciente{
+  display: grid;
+  grid-template-columns: repeat(2,fr);
+  grid-column: 1/3;
+  margin: 10px;
+  background-color: var(---blue-color);
+  border: 1px solid black;
+  color: var(---whitee-color);
+}
+
+.datospaciente h3{
+  grid-column: 2/3;
+}
+
+.datospaciente img{
+  grid-column: 1;
+  width: 30px;
+  margin-top: 10px;
+}
+
+.data {  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 10px;
+}
+
+.data input{
+  margin: 20px;
+  height: 30px;
+}
+
+.data select{
+  height: 30px;  
+  margin: 20px;
+}
+
+.datosp {  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 10px;
+}
+
+.datosp input{
+  margin: 20px;
+  height: 30px;
+}
+
+.datosp select{
+  height: 30px;
+  margin: 20px;
+}
+
+.pr{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 10px;
+}
+
+.pr input{
+  margin: 20px;
+  height: 30px;
+}
+
+.pr select{
+  height: 30px;
+  margin: 20px;
+}
+
+
+.radio label{
+  margin: 20px;
+}
+
+.radio .opradio{
+  text-align: center;
+  margin: 20px;
+}
+
+/*Animatio*/
+header img {
+  animation: movimiento 2.5s linear infinite;
+
+}
+
+@keyframes movimiento {
+  0%{
+      transform: translateX(0);
+  }
+
+  50%{
+      transform: translateY(15px);
+  }
+
+  100%{
+      transform: translateX(0);
+  }
+
+
+}
+
+
+
+
+
+.buttonenviar{
+  
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 30%;
+  padding: 3px;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(---darkblue-color);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttonenviar:hover{
+
+      background-color:var(---orange-color) ;
+  
+  
+  }
+
+
+
+
+footer{
+  background-color: var(---dark-color);
+  color: var(---whitee-color);
+  padding: 3px 0 40px;
+  text-align:center;
+  font-size: 11px;
+  height: 5px;
+  width: 100%;
+}
+
+/*Responsive-Media Queries*/
+
+
+@media (max-width: 768px ) {
+  .datos .datosp{
+    grid-template-columns: 1fr ;
+  }
+  .pr{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+
+}
+@media (max-width: 480px ) {
+  
+  .pr{
+    grid-template-columns:  1fr;
+  }
+
+  
+}
+

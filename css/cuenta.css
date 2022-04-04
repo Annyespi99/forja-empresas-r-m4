@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    
+
+    ---whitee-color: #ffffff;
+    ---red-color: #a40101;
+    ---blue-color: #2ca3ab;
+    ---blue2-color: #2ca3ab9b;
+    ---grey-color: #c4c4c4;
+    ---orange-color: #ca5714;
+    ---orangelight-color: #e47c40;
+    ---darkblue-color: #1d1b45;
+    ---darkbluelight-color: #1d1b45d8;
+    ---lightblue-color: #a8dde0;
+    ---dark-color: #191919;
+    ---gray-dark: #4444;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+#sidebar {
+    float: left;
+    width: 20%;
+    background-color:var(---darkblue-color);
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+
+
+}
+
+.logo-side {
+    text-align: center;
+    position: relative;
+    top: 16%;
+}
+
+.logo-side img {
+    width: 100%;
+    max-width: 250px;
+
+}
+.logo-side img:hover{
+    width: 100%;
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+.but-sid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+.but-s a:hover{
+    color: var(---darkblue-color) !important;
+    box-shadow: 0 2px 4px var(---orangelight-color);
+    transition: all 0.2s ease;
+    background-color: var(---orangelight-color);
+}
+
+.but-s {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+
+.but-s a {
+    background-color: var(---whitee-color);
+    border: var(---orangelight-color) solid 2px;
+    border-radius: 9px;
+    color: var(---dark-color);
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+}
+
+#content {
+    position: absolute;
+    right: 0px;
+    float: right;
+    width: 80%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.658)), url(../img/13.\ guerreros.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 95%;
+}
+
+.but-cont {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+.but-user {
+    display: flex;
+    align-items: center;
+    max-width: 33%;
+    min-width: 33px;
+    background-color: var(---grey-color);
+    border-radius: 19px;
+    margin: 5px 6px 0px 0px;
+    font-size: 18px;
+}
+
+.but-user:hover{
+    color: var(---orangelight-color) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+.but-user a {
+    border-radius: 200px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(---dark-color);
+    border: 3px solid var(---orange-color);
+    background-color: var(---whitee-color);
+    cursor: hand;
+    margin: 10px 10px 10px 10px;
+}
+
+.but-user a:hover{
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+.but-user p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    margin: 0px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*Titulo Bienvenidos*/
+.welcome h1 {
+    color: var(---orange-color);
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 50px 0px 70px 0px;
+}
+
+
+
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digiter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+.digiter-input {
+    width: 300px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid var(---darkblue-color);
+}
+
+::placeholder {
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+}
+
+.but-input a {
+    display: inline-block;
+    color: var(---whitee-color);
+    background-color: var(---darkblue-color);
+    border: var(---blue-color) 3px solid;
+    padding: 4px 10px 4px 10px;
+    border-radius: 9px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    
+}
+
+.but-input a:hover{
+    color: var(---darkblue-color) !important;
+    box-shadow: 0 2px 4px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+    background-color: var(---blue-color);
+}
+
+.corazon{
+    top: 28%;
+    left: 81%;
+    width:40px;
+    height: 40px;
+    background-color: var(---orangelight-color);
+    box-shadow:0 4px 4px var(---orange-color) ;
+    transform: rotate(45deg);
+    position:relative;
+    border-radius: 5px;
+    animation: palpito 2s linear infinite alternate ;
+    will-change: transform;
+
+}
+
+.corazon:before, .corazon:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(---orangelight-color);
+    border-radius: 50%;
+    
+}
+
+.corazon:before{
+    top: 0;
+    left: -50%;
+}
+
+.corazon:after{
+    top: -50%;
+    left: 0;
+}
+
+@keyframes palpito {
+    0%{
+        transform:rotate(45deg) scale(1);
+    }
+
+    50%{
+        transform:rotate(45deg) scale(1.8);
+    }
+
+    100%{
+        transform:rotate(45deg) scale(1);
+    }
+    
+}
+
+
+/*Animation*/
+#Documento::placeholder{
+    animation: typing 2s steps(29), blink .5s infinite step-end alternate;
+    overflow: hidden;
+
+}
+
+@keyframes frase {  
+    from{ width: 0;
+
+    }
+    
+}
+@keyframes blink {  
+    50%{border-color: transparent;}
+    
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+.footer img{
+    width: 80%;
+    bottom: 0;
+    align-self: flex-end;
+}
+
+
+
+
+/*Responsive-Media Queries*/
+
+@media (max-width: 360px){
+
+    .welcome h1{
+        font-size: 20px;
+
+
+    }
+
+
+    .search-soon input{
+        margin-left: 20px;
+    }
+
+    .search-soon input::placeholder{
+        font-size: 11px;
+
+
+        
+    }
+
+    
+
+    .but-user p{
+        display: none;
+        margin-right: 5px;
+    }
+    .but-s a span{
+        display: none;
+    }
+    .digiter-input{
+        width: 200px;
+    }
+    
+
+    }
+
+    
+
+
+    
+
+
+
+
+@media (max-width: 500px) {
+
+    .but-user{
+        margin-right: 50px;
+    }
+
+    .but-user p{
+        display: none;
+
+    }
+    .but-s a span{
+        display: none;
+    }
+    .digiter-input{
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .but-user p{
+        display: none;
+    }
+    .corazon{
+        top: 45%;
+        left: 80%;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .corazon{
+        top: 45%;
+        left: 75%;
+    }
+}
+
+@media (max-width: 1200px){
+    .corazon{
+        top: 45%;
+        left: 79%;
+    }
+}
