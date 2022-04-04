@@ -145,18 +145,18 @@ header img{
   margin: 20px;
 }
 
-.datosp {  
+.datap {  
   display: grid;
   grid-template-columns: repeat(2,1fr);
   margin: 10px;
 }
 
-.datosp input{
+.datap input{
   margin: 20px;
   height: 30px;
 }
 
-.datosp select{
+.datap select{
   height: 30px;
   margin: 20px;
 }
@@ -250,7 +250,7 @@ footer{
 
 
 @media (max-width: 768px ) {
-  .datos .datosp{
+  .data, .datap{
     grid-template-columns: 1fr ;
   }
   .pr{
