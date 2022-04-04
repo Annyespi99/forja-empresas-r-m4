@@ -214,15 +214,16 @@ header{
     margin: 0;
 }
 
-.signos{
+.franja{
     width: 60%;
     height: 40px;
-    
+    background-color: red;
     background-image: url(../img/linea.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
-}
+} 
+
 
 .signos li{
     margin: 10px;
