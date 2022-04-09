@@ -344,7 +344,7 @@ footer{
 
 /*Responsive- Media Queries*/
 
-@media (max-width:360px){
+@media (max-width:320px){
 
     *{
         margin: 0;
@@ -352,9 +352,14 @@ footer{
 
     }
 
+
     header{
         margin: 0;
         padding: 0;
+    }
+
+    .contact-information p{
+        font-size: 7.9px;
     }
 
 
@@ -393,6 +398,7 @@ footer{
         font-size: 15px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         margin-left: 90px;
         margin-bottom: 20px;
 
@@ -401,22 +407,10 @@ footer{
 
 }
 @media (max-width:521px){
-
-    .cont-2{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        
-        
+    .contact-information p{
+        font-size: 7.9px;
     }
 
-    .contact-information{
-        font-size: 5px;
-        display: flex;
-        flex-direction: row;
-        margin-left: 100px;
-        margin-bottom: 20px;
-
-    }
     .contact-soon1{
         margin-bottom: 20px;
         
@@ -435,8 +429,8 @@ footer{
 
     .contact-information{
         font-size: 10px;
-        display: flex;
-        flex-direction: row;
+        
+        
 
     }
 
@@ -458,7 +452,6 @@ footer{
     .jeringa{
         width: 0%;
     }
-
 
     .info-banner{
         background-color: rgba(0, 0, 0, .3);
