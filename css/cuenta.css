@@ -276,7 +276,7 @@ body{
 }
 
 @media screen and (min-width:768px) {
-    .resModal{
+    .contentModal{
         padding: 2rem 3rem;
     }
 
@@ -284,17 +284,17 @@ body{
         margin:0.5rem;
         font-size: 16px;
     }
-    .infoModal p{
+    .infModal p{
         font-size: 16px;
         line-height: 1.5em;
     }
     
-    .datosModal p{
+    .dateModal p{
         font-size: 16px;
         line-height: 1.5em;
     }
 
-    .infoModal1 p{
+    .infModal1 p{
         font-size: 22px;
     }
 }

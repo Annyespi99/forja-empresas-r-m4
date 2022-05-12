@@ -10,7 +10,7 @@ search.onclick=function appear(e){
     e.preventDefault();
     let documento=document.getElementById("documento").value;
     let contentModal=document.querySelector(".contentModal");
-    let dateModal=document.querySelector(".datosModal");
+    let dateModal=document.querySelector(".dateModal");
 
     switch(documento){
 
