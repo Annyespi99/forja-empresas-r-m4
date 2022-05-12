@@ -119,7 +119,8 @@ input{
 
 .enviar__boton{
     margin-top: 16px;
-    width: 100%;
+    width: 30%;
+
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     background-color: var(---orangelight-color);
