@@ -24,6 +24,8 @@
         <article class="title">
             <h2 id="usuario-nuevo">REGISTRO NUEVO DE VACUNACIÓN</h2>
         </article>
+
+    <form id="vacunaNueva" action="tablepacientes.html" method="get">
         <div class="container2">
             <article class="form">  
                     <input class="input" type="date" name="fecha" id="fecha" required>
@@ -100,18 +102,18 @@
                 <input name="refuerzo" id="biologico" type="text" placeholder="Fecha Refuerzo">
                 <input name="descripción" id="description" type="text" placeholder="Descripción" required>
             </div>
-        
-                <div class="Regisrar">
-                    
-                    <a href="tablepacientes.html"><button class="buttonenviar" type="submit">Guardar</button></a>
-                </div> 
-            </div>
-            </article>
+            <div class="Regisrar">                   
+                <button  form="vacunaNueva" class="buttonenviar" type="submit">Guardar</button>
+            </div> 
         </div>
+        </article>
+        
+        </div>
+        </form>
+    
+
         </div>
     </div>
-
-
         
     </div>
     </article>

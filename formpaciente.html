@@ -24,18 +24,19 @@
         <article class="title">
             <h2 id="usuario-nuevo">REGISTRO USUARIO NUEVO</h2>
         </article>
-        <div class="container2">
+    <div class="container2">
+        <form>
             <article class="form">  
-                    <input class="input" type="date" name="fecha" id="fecha">
-                    <input class=" input" type="number" name="numeroregistro" id="nregisto" placeholder="N regitro"> 
+                    <input class="input" type="date" name="fecha" id="fecha" required>
+                    <input class=" input" type="number" name="numeroregistro" id="nregisto" placeholder="N regitro" required> 
             <article class="datospaciente">
                 <img src="img/16. man-user.svg">
                 <h3>DATOS DEL PACIENTE</h3>
             </article>
             <div class="data">
-                <input type="text" class="datos1" name="name" id="name" placeholder="Escribe tu nombre">
+                <input type="text" class="datos1" name="name" id="name" placeholder="Escribe tu nombre" required>
                 <input type="text" class="datos2" name="lastname" id="lastname" placeholder="Apellidos">
-                <input type="text"  class="datos3"name="nidentificacion" id="nid" placeholder="Número de identificación">
+                <input type="text"  class="datos3"name="nidentificacion" id="nid" placeholder="Número de identificación" required>
             <select name="tid" id="tid">
                 <option value="0" selected>Tipo de documento</option>
                 <option value="1">Cédula de ciudadania</option>
@@ -43,8 +44,8 @@
                 <option value="3">Tarjeta de identidad</option>
                 <option value="4">Registro civil</option>
             </select>
-            <input type="date" name="fechan" id="fechan">
-            <input type="number" name="edad" id="edad" placeholder="Edad">
+            <input type="date" name="fechan" id="fechan" required>
+            <input type="number" name="edad" id="edad" placeholder="Edad" required>
             </div>
             <article class="datospaciente">
                 <img src="img/17. geo.svg">
@@ -57,10 +58,10 @@
                 <select name="mun" id="mun">
                     <option value="0" selected>Municipio de residencia</option>
                 </select>
-                <input type="text" name="dir" id="dir" placeholder="Dirección">
-                <input type="email" name="email" id="email" placeholder="Correo">
-                <input type="number" name="tel" id="tel" placeholder="Teléfono Fijo">
-                <input type="number" name="cel" id="cel" placeholder="Celular">                    
+                <input type="text" name="dir" id="dir" placeholder="Dirección" required>
+                <input type="email" name="email" id="email" placeholder="Correo"required>
+                <input type="number" name="tel" id="tel" placeholder="Teléfono Fijo" required>
+                <input type="number" name="cel" id="cel" placeholder="Celular" required>                    
             </div>
             <article class="datospaciente">
                 <img src="img/17. geo.svg">
@@ -73,26 +74,27 @@
                 <select name="disc" id="disc">
                     <option value="0" selected>Discapacidad</option>
                 </select>
-                <input type="text" name="alergia" id="alergia" placeholder="Alergias">
+                <input type="text" name="alergia" id="alergia" placeholder="Alergias" required>
             </div>
             <div class="radio">
                 <label for="pruebap">¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido positiva?</label>
                 <div class="opradio">
-                    SI<input name="pruebap" id="pruebap" type="radio" > 
-                    NO<input name="pruebap" id="pruebap" type="radio" > 
+                    SI<input name="pruebap" id="pruebap" type="radio" required > 
+                    NO<input name="pruebap" id="pruebap" type="radio" required > 
                 </div>
                 <label for="chulo">¿El paciente ha tenido un contacto estrecho o cercano con una persona confirmada o sospechosa COVID-19 en los últimos 14 días?</label>
                 <div class="opradio">
-                    SI<input name="pruebap" id="pruebap" type="radio" > 
+                    SI<input name="pruebap" id="pruebap" type="radio" required > 
                     NO<input name="pruebap" id="pruebap" type="radio" > 
                 </div>
-                <div class="Regisrar">
+                <div class="Regisrar" required>
                     
                     <a href="tablepacientes.html"><button class="buttonenviar" type="submit">Registrar</button></a>
                 </div> 
             </div>
             </article>
         </div>
+    </form>
         </div>
     </div>
 

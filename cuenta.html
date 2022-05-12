@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="index" autor="Anny Espinel">
-    <title> Forja ⭑ Cuenta</title>
+    <title> Forja ⭑ dashboard</title>
     <link rel="shotcut icon" href="img/forja 1.svg">
     <link rel="stylesheet" href="css/cuenta.css">
 <script src="https://kit.fontawesome.com/4c9db78ec9.js" crossorigin="anonymous"></script>
@@ -22,7 +22,8 @@
         <div class="but-sid">
             <div class="but-s">
                 <a href="tablepacientes.html"><i class="fa-solid fa-users"></i><span>Pacientes</span></a>
-                <a href=""><i class="fa-solid fa-syringe"></i><span>Vacunación</span></a>
+                <a href="formpaciente.html"><i class="fa-solid fa-address-card"></i><span>Nuevo Paciente</span></a>
+                <a href="formvacuna.html"><i class="fa-solid fa-syringe"></i><span>Vacunación</span></a>
                 <a href="index.html"><i class="fa-solid fa-power-off"></i><span>Cerrar sesión</span></a>
             </div>
         </div>
@@ -44,19 +45,162 @@
             <section class="digiter">
                 <div class="search-soon">
                     <label for="Documento"></label>
-                    <input type="number" name="Documento" id="Documento" placeholder="Digite el número de Documento" class="digiter-input">
+                    <input type="text" name="documento" id="documento" placeholder="Digite el número de Documento" class="digiter-input">
                 </div>
 
-
+                <!---Alert cuenta-NO REGISTRADO -->
                 <div class="but-input">
-                    <a href="alertcuenta.html" class=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a id="search" class=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="but-input">
                     <a href=""><i class="fa-solid fa-rotate-right"></i></a>
-                    
                 </div>
             </section>
         </div>
 
-        <div class="corazon"></div>
+
+<!--------------------------------------------------------->
+
+<div class="contentModal">
+    <div class="soonModal">
+        <div class="generalModal">
+        <div class="infModal">
+            <p>C.C</p>
+            <p>Nombre completo:</p>
+            <p>Biólogo:</p>
+            <p>Primera Dosis:</p>
+            <p>Fecha de Aplicación:</p>
+            <p>Segunda Dosis:</p>
+            <p>Fecha de Aplicación:</p>
+            <p>Refuerzo:</p>
+            <p>Biólogo:</p>
+            <p>Fecha de Aplicación:</p>
+            
+        </div>
+        <div class="dateModal">
+        </div>
+    </div>
+        <div class="btnModal">
+            <a class="btnRegister" href="formvacuna.html">Registrar vacuna</a>
+            <a class="btnClose" href="cuenta.html">Cerrar</a>
+        </div>
+    </div>
+</div>
+
+<!---MODAL:Caso 1 El primer paciente con documento de identidad 52368795, para este paciente se debe mostrar en una alerta que cuenta con la primera dosis, para esto debe aparecer la vacuna y la fecha en la que se realizó el proceso (“datos ficticios”), a su vez debe redirigirlo al formulario para registrar su segunda dosis.
+
+        <section id="modalCase1" class="modal">
+            <div class="contentMain">
+                <figure class="modalImage">
+                    <img src="img/0. logoforja.png" class="modalImg" alt="">
+                </figure>
+                <p class="textmod">
+                    No. de Dosis:<span class="tab">Primera</span>
+                    <br>
+                    Biólogo:<span class="tab2">Pfizer</span>
+                    <br>
+                    Fecha Primera Dosis:<span class="tab3">23-10-2021</span>
+                    <br>
+                </p>
+                <div class="buttons">
+                    <button class="btn-1"><a href="formvacuna.html">Registrar Segunda Dosis</a></button>
+                    <button class="btn-2"><a href="#">Cancelar</a></button>
+                </div>
+            </div>
+        </section>
+
+<!---------------------------------------------------------------------------------------------->
+
+
+<!---MODAL:Caso 2 El segundo paciente con documento de identidad 1001235478, para este paciente se debe mostrar en una alerta que cuenta con la primer y segunda dosis, para esto deben aparecer las vacunas y la fechas en la que se realizaron los procesos (“datos ficticios”), a su vez debe redirigirlo al formulario para registrar su tercera
+dosis. 
+
+
+
+        <section id="modalCase2" class="modal">
+            <div class="contentMain">
+                <figure class="modalImage">
+                    <img src="img/0. logoforja.png" class="modalImg" alt="">
+                </figure>
+                <p class="textmod">
+                    No. de Dosis:<span class="tab">Primera</span>
+                    <br>
+                    Biólogo:<span class="tab2">Moderna</span>
+                    <br>
+                    Fecha Primera Dosis:<span class="tab3">24-09-2021</span>
+                    <br>
+                    No. de Dosis:<span class="tab">Segunda</span>
+                    <br>
+                    Biólogo:<span class="tab2">Moderna</span>
+                    <br>
+                    Fecha Primera Dosis:<span class="tab3">24-11-2021</span>
+                    <br>
+                </p>
+                <div class="buttons">
+                    <button class="btn-1"><a href="formvacuna.html">Registrar Refuerzo</a></button>
+                    <button class="btn-2"><a href="#">Cancelar</a></button>
+                </div>
+            </div>
+        </section>
+
+
+MODAL:Caso 3 El tercer paciente con documento de identidad 25413574, para este paciente se debe mostrar en una alerta que cuenta con el esquema completo, para esto debe aparecer la vacunas y la fechas en la que se realizaron los procesos (“datos
+fiticios”).
+
+<section id="modalCase3" class="modal">
+    <div class="containeMain3">
+        <figure class="modalImage">
+            <img src="img/0. logoforja.png" class="modalImg" alt="">
+        </figure>
+        <p class="textmod">
+            No. de Dosis:<span class="tab">Primera</span>
+            <br>
+            Biólogo:<span class="tab2">AztraZeneca</span>
+            <br>
+            Fecha Primera Dosis:<span class="tab3">24-09-2021</span>
+            <br>
+            No. de Dosis:<span class="tab">Segunda</span>
+            <br>
+            Biólogo:<span class="tab2">
+                Biólogo:<span class="tab2">AztraZeneca</span>
+            <br>
+            Fecha Primera Dosis:<span class="tab3">24-11-2021</span>
+            <br>
+            Biólogo:<span class="tab2">Moderna</span>
+            <br>
+            Fecha Primera Dosis:<span class="tab3">24-1-2022</span>
+            <br>
+        </p>
+        <div class="buttons">
+            <button class="btn-1"><a href="formvacuna.html">Aceptar</a></button>
+            <button class="btn-2"><a href="#">Cancelar</a></button>
+        </div>
+    </div>
+</section>
+
+<!---MODAL:Caso 4 El cuarto paciente con documento de identidad 1007203506, para este paciente se debe mostrar que no se tiene registro de vacunación y posteriormente redirigirlo a que realice el registro como paciente, en este formulario se debe realizar validación de campos, es decir si se intenta enviar la información del formulario y no está completo o algún campo es erróneo debe aparecer un mensaje que le muestre que no puede culminar el proceso..
+
+<section id="modalCase4" class="modal">
+    <div class="contentMain">
+        <figure class="modalImage">
+            <img src="img/0. logoforja.png" class="modalImg" alt="">
+        </figure>
+        <p class="textmod">
+            <h2>Usuario no registrado, desea <br> realizar registro?</h2>
+        </p>
+        <div class="buttons">
+            <button class="btn-1"><a href="formvacuna.html">Registrar Refuerzo</a></button>
+            <button class="btn-2"><a href="#">Cancelar</a></button>
+        </div>
+    </div>
+</section>-->
+
+<script src="js/dashboard.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!----Footer---->
+
+<div class="corazon"></div>
 
         <div class="footer">
         <img src="img/12. franja.svg" alt="" >
@@ -66,6 +210,5 @@
     
 </body>
     
-
 
 </html>
